@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "Fake StudentVue Grades",
+  "version": "1.2.1",
+  "description": "Shows each class's grade as a 100% on StudentVue! (Does not affect your actual grades in StudentVue's database).",
+  "icons": {
+    "16": "icon16.png",
+    "32": "icon32.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "permissions": [
+    "https://*.edupoint.com/*"
+  ],
+  "background": {
+    "scripts": ["main.js"]
+  }
+}
