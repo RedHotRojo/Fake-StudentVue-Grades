@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Fake StudentVue Grades",
-  "version": "1.2.2",
+  "version": "1.3",
   "description": "Shows each class's grade as a 100% on StudentVue! (Does not affect your actual grades in StudentVue's database).",
   "icons": {
     "16": "icon16.png",

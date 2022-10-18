@@ -17,6 +17,11 @@ function changeGrades() {
         let text = v.innerText.split("/")[1];
         v.innerText = text.substr(0, text.indexOf(".")+3) + "/" + text;
       });
+      let gradesDivs = [...document.querySelectorAll(".gb-student-assignments-grid table div")].filter(v => v.innerText.includes("out of"));
+      let grades = gradesDivs.map(v => Number(v.innerText.slice(v.innerText.lastIndexOf(" ")+1)));
+      gradesDivs.forEach((v, i) => {
+        v.innerText = "Score: " + grades[i] + v.innerText.slice(v.innerText.indexOf(" o"));
+      });
     }
     requestAnimationFrame(changeGrades);
   }
